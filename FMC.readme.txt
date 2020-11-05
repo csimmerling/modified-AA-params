@@ -1,0 +1,8 @@
+ff14SB library files for the flavin mononucleotide, as described in https://pubs.acs.org/doi/full/10.1021/acschembio.0c00543
+Unraveling the Mechanism of a LOV Domain Optogenetic Sensor: A Glutamine Lever Induces Unfolding of the J? Helix
+James N. Iuliano, Jinnette Tolentino Collado, Agnieszka A. Gil, Pavithran T. Ravindran, Andras Lukacs, SeungYoun Shin, Helena A. Woroniecka, Katrin Adamczyk, James M. Aramini, Uthama R. Edupuganti, Christopher R. Hall, Gregory M. Greetham, Igor V. Sazanovich, Ian P. Clark, Taraneh Daryaee, Jared E. Toettcher, Jarrod B. French, Kevin H. Gardner, Carlos L. Simmerling*, Stephen R. Meech*, and Peter J. Tonge*
+Cite this: ACS Chem. Biol. 2020, 15, 10, 2752–2765
+look in the section "Parameter Development for the Flavin Cofactor" for more details. 
+notes: this is the flavin portion only and is intended to be linked to a Cys residue through the SG atom in CYX. Make sure to add the bond between FMC C4A and CYX SG in your system building.
+you will also need to load the GAFF2 libraries during setup.
+

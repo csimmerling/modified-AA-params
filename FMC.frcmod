@@ -1,0 +1,70 @@
+this was copied from FMCcys but then edited to make the protein part (CB, SG etc) match ff14SB CYX atom types (c3, ss to 2C, S) since that's what will bond to this residue. note that c3 showed up more than just the CB atom
+MASS
+ns 14.010        0.530               same as n  
+nu 14.010        0.530               same as nh 
+
+BOND
+c -ns  427.60   1.379       same as  c- n, penalty score=  0.0
+hn-ns  403.20   1.013       same as hn- n, penalty score=  0.0
+c3-nu  326.60   1.464       same as c3-nh, penalty score=  0.0
+ca-nu  417.90   1.386       same as ca-nh, penalty score=  0.0
+hn-nu  404.60   1.012       same as hn-nh, penalty score=  0.0
+c3-S   182.96   1.839       copied from c3-ss gaff2
+
+ANGLE
+ne-c -ns   73.660     110.260   same as n -c -ne, penalty score=  0.0
+c -ns-c    63.740     127.080   same as c -n -c , penalty score=  0.0
+c -ns-hn   48.330     117.550   same as c -n -hn, penalty score=  0.0
+ns-c -o    74.220     123.050   same as n -c -o , penalty score=  0.0
+c3-c -ns   66.790     115.180   same as c3-c -n , penalty score=  0.0
+c -c3-nu   66.870     109.350   same as c -c3-nh, penalty score=  0.0
+c3-nu-ca   63.390     119.980   same as c3-nh-ca, penalty score=  0.0
+c3-nu-hn   46.070     115.990   same as c3-nh-hn, penalty score=  0.0
+c2-c3-nu   66.900     110.410   same as c2-c3-nh, penalty score=  0.0
+nu-c3-ss   63.940     109.010   same as nh-c3-ss, penalty score=  0.0
+ca-ca-nu   68.290     120.950   same as ca-ca-nh, penalty score=  0.0
+ca-nu-hn   48.420     116.070   same as ca-nh-hn, penalty score=  0.0
+nu-c3-S    63.940     109.010   copied from nu-c3-ss above
+2C-S -c3   71.051      99.240   copied from c3-ss-c3 gaff2
+c2-c3-S    65.117     104.970   copied from c2-c3-ss gaff2
+c -c3-S    63.788     108.840   copied from c -c3-ss gaff2
+
+DIHE
+ne-c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ne-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+c3-c -ns-c    4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+o -c -ns-hn   1    2.500       180.000          -2.000      same as hn-n -c -o 
+o -c -ns-hn   1    2.000         0.000           1.000      same as hn-n -c -o , penalty score=  0.0
+c -c3-nu-ca   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+c -c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+c3-c -ns-hn   4   10.000       180.000           2.000      same as X -c -n -X , penalty score=  0.0
+ca-ca-nu-c3   4    4.200       180.000           2.000      same as X -ca-nh-X , penalty score=  0.0
+c2-c3-nu-ca   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ss-c3-nu-ca   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ca-ca-nu-hn   4    4.200       180.000           2.000      same as X -ca-nh-X , penalty score=  0.0
+c2-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+ss-c3-nu-hn   6    0.000         0.000           2.000      same as X -c3-nh-X , penalty score=  0.0
+S -c3-nu-hn   6    0.000         0.000           2.000      copied from ss-c3-nu-hn above
+S -c3-nu-ca   6    0.000         0.000           2.000      copied from ss-c3-nu-ca above
+X -c3-S -X    3    1.000         0.000           3.000      copied from X -c3-ss-X gaff2
+X -2C-S -X    3    1.000         0.000           3.000      copied from X -c3-ss-X gaff2
+c3-S -2C-CX   1    0.167         0.000           3          copied from c3-ss-c3-c3 gaff2
+
+IMPROPER
+ne-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -c -ns-hn         1.1          180.0         2.0          Same as X -X -n -hn, penalty score=  6.0 (use general term))
+c3-ns-c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c3-ca-nu-hn         1.1          180.0         2.0          Using the default value
+ca-ca-ca-nu         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-ca-nh         1.1          180.0         2.0          Using the default value
+c2-c3-nh-ca         1.1          180.0         2.0          Using the default value
+c3-ne-c2-nh         1.1          180.0         2.0          Using the default value
+
+NONBON
+  ns          1.8240  0.1700             same as n  
+  nu          1.8240  0.1700             same as nh 
+
+
+
